@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 1rem 0 1rem;
+}
+
+.header h1 {
+  text-align: center;
+}
+
+/* Show the add form and delete all button alongside each other */
+.row {
+  display: flex;
+  align-items: center;
+}
+
+form {
+  margin-bottom: 1px;
+  text-align: center;
+  margin-right: 15px;
+}
+
+input[type='text'] {
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+button[type='submit'] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.delete-all-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ca5249;
+  color: #fff;
+}
+
+.container {
+  margin: 2rem 1rem 0 1rem;
+}
+/* Style the table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Style the table header */
+th {
+  background-color: #f5e61d;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Style the table cells */
+td {
+  border: 0.1px solid #ccc;
+  padding: 10px;
+  color: #fff;
+}
+
+.id {
+  width: 10%;
+}
+
+.task {
+  width: 50%;
+}
+
+th .status {
+  width: 20%;
+}
+
+.action {
+  width: 20%;
+}
+
+/* Style the task status span */
+.task-status {
+  border-radius: 5px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px;
+  text-transform: uppercase;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+/* Style the done status */
+.done {
+  background-color: rgb(151, 190, 151);
+}
+
+/* Style the pending status */
+.pending {
+  background-color: rgb(136, 182, 235);
+}
+
+/* Style the conversion buttons */
+tr .status {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Style the convert button */
+.convert-button {
+  margin-right: 5px;
+}
+
+/* Style the edit and delete buttons */
+button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 5px;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.modal {
+  display: none;
+}
+
+.editForm {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.close-button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ca5249;
+  color: #fff;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  right: 10px
+  
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
